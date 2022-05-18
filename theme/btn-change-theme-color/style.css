@@ -16,7 +16,7 @@ body {
 
 :root {
     --background-color: #fefefe;
-    --first-color: #444;
+    --first-color: #888;
 }
 
 body {
@@ -70,7 +70,7 @@ body {
 
 .dark {
     --background-color: #444;
-    --first-color: #fefefe;
+    --first-color: #e7e7e7;
     transition: .3s;
 }
 
