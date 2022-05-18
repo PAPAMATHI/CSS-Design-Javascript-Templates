@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Add this section in your project */
+
+:root {
+    --background-color: #fefefe;
+    --first-color: #444;
+}
+
+body {
+    background-color: var(--background-color);
+    transition: .3s;
+}
+
+.container--button {
+    display: flex;
+    align-items: center;
+}
+
+.btn__ios--container {
+    position: relative;
+    display: block;
+    padding: .2rem;
+    width: 60px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: #e9e9ea;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+
+.btn__ios--switch {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgb(0, 0, 0, 0.15);
+    transition: .7s;
+}
+
+.active {
+    background-color: rgba(0, 255, 0, 0.664);
+    transition: .7s;
+}
+
+.active--switch {
+    transform: translate(100%, -50%);
+}
+
+
+/* ========== DARK MODE ========== */
+
+.dark {
+    --background-color: #444;
+    --first-color: #fefefe;
+    transition: .3s;
+}
+
+
+/* ========== ICONS ========== */
+
+.container--button--icon {
+    color: var(--first-color);
+    margin: 0 .5rem;
+    transition: .3s;
+}
+
+
+/* Add this section in your project */
